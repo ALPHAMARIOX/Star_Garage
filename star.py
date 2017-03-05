@@ -1,5 +1,5 @@
-#Base Offense/Attack of Star
-ATK = 0x3C
+#Base Weight of Star
+WGT = 0x3C
 
 #Base HP of Star
 HP = 0x9C
