@@ -28,7 +28,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="tbWeight">
      <attribute name="icon">
@@ -58,6 +58,19 @@
       </property>
       <property name="text">
        <string>HP Amount:</string>
+      </property>
+     </widget>
+     <widget class="QSlider" name="hslHP">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>40</y>
+        <width>661</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
       </property>
      </widget>
     </widget>
@@ -114,6 +127,38 @@
      <attribute name="title">
       <string>Charge</string>
      </attribute>
+     <widget class="QLabel" name="lblChargeSpd">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>50</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Charge Speed:</string>
+      </property>
+     </widget>
+     <widget class="QSlider" name="horizontalSlider">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>50</y>
+        <width>621</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>1</number>
+      </property>
+      <property name="singleStep">
+       <number>1</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="tbBoost">
      <attribute name="icon">
@@ -139,10 +184,16 @@
     <property name="title">
      <string>File</string>
     </property>
+    <addaction name="actOpen"/>
    </widget>
    <addaction name="menuFile"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <action name="actOpen">
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>
