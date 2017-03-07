@@ -1,3 +1,5 @@
+##### Offsets for stats of the stars. Some may have more variables linked to it than others. ######
+
 #Base Weight of Star
 WGT = 0x3C
 
@@ -11,7 +13,7 @@ GSPD = 0xC0
 SUPSPD = 0xC4
 SDOWNSPD = 0xC8
 
-
+#Base Charge.
 CHRGSPD = 0xCC
 CHRGSPDTRN = 0xD0
 CHRGDEP = 0xD4
@@ -19,7 +21,10 @@ BOOSTNONE = 0xD8
 BOOSTHALF = 0xDC
 BOOSTFULL = 0xE0
 BOOSTCHRG = 0x10C
+
+#Base Turning.
 TURNNORMAL = 0x110
+
 STRTSPD = 0x16C
 ACCELAIR = 0x17C
 TURNAIR = 0x180
@@ -34,4 +39,6 @@ SPDAIRSTRGHT = 0x1C0
 SPDNONTURNAIRX = 0x1C8
 TRNSPDRAILS = 0x1F0
 HOVER = 0x220
+
+#Base Glide.
 GLIDE = 0x338
