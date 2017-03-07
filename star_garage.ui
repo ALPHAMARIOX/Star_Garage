@@ -18,7 +18,7 @@
     <normaloff>600px-Kirbyball.png</normaloff>600px-Kirbyball.png</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QTabWidget" name="tabWidget">
+   <widget class="QTabWidget" name="tabStats">
     <property name="geometry">
      <rect>
       <x>-4</x>
@@ -28,7 +28,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>4</number>
     </property>
     <widget class="QWidget" name="tbWeight">
      <attribute name="icon">
@@ -38,6 +38,9 @@
      <attribute name="title">
       <string>Weight</string>
      </attribute>
+     <attribute name="toolTip">
+      <string>The weight property of a star.</string>
+     </attribute>
     </widget>
     <widget class="QWidget" name="tbHP">
      <attribute name="icon">
@@ -46,6 +49,9 @@
      </attribute>
      <attribute name="title">
       <string>HP</string>
+     </attribute>
+     <attribute name="toolTip">
+      <string>The amount of health a star has.</string>
      </attribute>
      <widget class="QLabel" name="lblHP">
       <property name="geometry">
@@ -82,6 +88,35 @@
      <attribute name="title">
       <string>Speed</string>
      </attribute>
+     <attribute name="toolTip">
+      <string>The speed of the star.</string>
+     </attribute>
+     <widget class="QLabel" name="lblGroundSpeed">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>50</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Ground Speed:</string>
+      </property>
+     </widget>
+     <widget class="QSlider" name="hslGroundSpeed">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>50</y>
+        <width>661</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="tbGlide">
      <attribute name="icon">
@@ -91,6 +126,35 @@
      <attribute name="title">
       <string>Glide</string>
      </attribute>
+     <attribute name="toolTip">
+      <string>How long the star can stay airborne and how far it can reach.</string>
+     </attribute>
+     <widget class="QLabel" name="lblGlide">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>50</y>
+        <width>61</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Base Glide:</string>
+      </property>
+     </widget>
+     <widget class="QSlider" name="hslGlide">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>50</y>
+        <width>671</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="tbTurn">
      <attribute name="icon">
@@ -100,6 +164,61 @@
      <attribute name="title">
       <string>Turning</string>
      </attribute>
+     <attribute name="toolTip">
+      <string>The star's handling attribute.</string>
+     </attribute>
+     <widget class="QLabel" name="lblBaseTurn">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>40</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Base Turning:</string>
+      </property>
+     </widget>
+     <widget class="QSlider" name="hslTurn">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>40</y>
+        <width>651</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>100</y>
+        <width>71</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Turning (Air):</string>
+      </property>
+     </widget>
+     <widget class="QSlider" name="hslTurnInAIR">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>100</y>
+        <width>651</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="tbOffense">
      <attribute name="icon">
@@ -109,6 +228,9 @@
      <attribute name="title">
       <string>Offense</string>
      </attribute>
+     <attribute name="toolTip">
+      <string>How much damage a star can do to another star.</string>
+     </attribute>
     </widget>
     <widget class="QWidget" name="tbDefense">
      <attribute name="icon">
@@ -117,6 +239,9 @@
      </attribute>
      <attribute name="title">
       <string>Defense</string>
+     </attribute>
+     <attribute name="toolTip">
+      <string>How much damage a star can take from attacks.</string>
      </attribute>
     </widget>
     <widget class="QWidget" name="tbCharge">
@@ -140,7 +265,7 @@
        <string>Charge Speed:</string>
       </property>
      </widget>
-     <widget class="QSlider" name="horizontalSlider">
+     <widget class="QSlider" name="hslChargeSpeed">
       <property name="geometry">
        <rect>
         <x>150</x>
@@ -153,6 +278,35 @@
        <number>1</number>
       </property>
       <property name="singleStep">
+       <number>1</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblChargeSpeedTurning">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>120</y>
+        <width>131</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Charge Speed (Turning):</string>
+      </property>
+     </widget>
+     <widget class="QSlider" name="hslChargeSpeedTurning">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>120</y>
+        <width>621</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="maximum">
        <number>1</number>
       </property>
       <property name="orientation">

@@ -6,7 +6,7 @@ WGT = 0x3C
 #Base HP of Star
 HP = 0x9C
 
-#Ground Speed of Star
+#Base Speed of Star
 GSPD = 0xC0
 
 #Speed of Star going up/down slope.
@@ -17,6 +17,9 @@ SDOWNSPD = 0xC8
 CHRGSPD = 0xCC
 CHRGSPDTRN = 0xD0
 CHRGDEP = 0xD4
+CHRGAIR = 0x190
+
+#Base Boost.
 BOOSTNONE = 0xD8
 BOOSTHALF = 0xDC
 BOOSTFULL = 0xE0
@@ -24,11 +27,10 @@ BOOSTCHRG = 0x10C
 
 #Base Turning.
 TURNNORMAL = 0x110
+TURNAIR = 0x180
 
 STRTSPD = 0x16C
 ACCELAIR = 0x17C
-TURNAIR = 0x180
-CHRGAIR = 0x190
 SPDNOSEUP = 0x1A4
 AMTNOSEUP = 0x1A8
 SPDNOSEDWN = 0x1AC
