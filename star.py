@@ -1,3 +1,4 @@
+##### Lee Harrold (AlphaMK - ALPHAMARIOX) #####
 ##### Offsets for stats of the stars. Some may have more variables linked to it than others. ######
 
 #Base Weight of Star
