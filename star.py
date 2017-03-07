@@ -3,14 +3,19 @@
 
 #Base Weight of Star
 WGT = 0x3C
+weight = 0
 
 #Base HP of Star
 HP = 0x9C
+health = 0
 
 #Base Speed of Star
 GSPD = 0xC0
+spd = 0
 SUPSPD = 0xC4
 SDOWNSPD = 0xC8
+slopeu = 0
+sloped = 0
 STRTSPD = 0x16C
 ACCELAIR = 0x17C
 
