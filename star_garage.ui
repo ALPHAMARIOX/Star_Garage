@@ -27,8 +27,11 @@
       <height>581</height>
      </rect>
     </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Adjust the star's weight.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="tbWeight">
      <attribute name="icon">
@@ -44,7 +47,7 @@
      <widget class="QLabel" name="lblWeight">
       <property name="geometry">
        <rect>
-        <x>20</x>
+        <x>10</x>
         <y>40</y>
         <width>71</width>
         <height>16</height>
@@ -57,14 +60,52 @@
      <widget class="QSlider" name="hslWeight">
       <property name="geometry">
        <rect>
-        <x>90</x>
+        <x>130</x>
         <y>40</y>
-        <width>691</width>
+        <width>661</width>
         <height>22</height>
        </rect>
       </property>
       <property name="orientation">
        <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="tickPosition">
+       <enum>QSlider::TicksBelow</enum>
+      </property>
+      <property name="tickInterval">
+       <number>1</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblKnockback">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>80</y>
+        <width>111</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Knockback Endurance:</string>
+      </property>
+     </widget>
+     <widget class="QSlider" name="hslKnockback">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>80</y>
+        <width>661</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="tickPosition">
+       <enum>QSlider::TicksBelow</enum>
+      </property>
+      <property name="tickInterval">
+       <number>1</number>
       </property>
      </widget>
     </widget>
@@ -82,9 +123,9 @@
      <widget class="QLabel" name="lblHP">
       <property name="geometry">
        <rect>
-        <x>30</x>
+        <x>10</x>
         <y>40</y>
-        <width>61</width>
+        <width>71</width>
         <height>16</height>
        </rect>
       </property>
@@ -95,14 +136,26 @@
      <widget class="QSlider" name="hslHP">
       <property name="geometry">
        <rect>
-        <x>110</x>
+        <x>130</x>
         <y>40</y>
         <width>661</width>
         <height>22</height>
        </rect>
       </property>
+      <property name="minimum">
+       <number>1</number>
+      </property>
+      <property name="maximum">
+       <number>2000</number>
+      </property>
       <property name="orientation">
        <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="tickPosition">
+       <enum>QSlider::TicksBelow</enum>
+      </property>
+      <property name="tickInterval">
+       <number>100</number>
       </property>
      </widget>
     </widget>
@@ -120,8 +173,8 @@
      <widget class="QLabel" name="lblGroundSpeed">
       <property name="geometry">
        <rect>
-        <x>30</x>
-        <y>50</y>
+        <x>10</x>
+        <y>40</y>
         <width>81</width>
         <height>21</height>
        </rect>
@@ -133,8 +186,8 @@
      <widget class="QSlider" name="hslGroundSpeed">
       <property name="geometry">
        <rect>
-        <x>120</x>
-        <y>50</y>
+        <x>130</x>
+        <y>40</y>
         <width>661</width>
         <height>22</height>
        </rect>
@@ -146,8 +199,8 @@
      <widget class="QLabel" name="lblTakeOffSpeed">
       <property name="geometry">
        <rect>
-        <x>40</x>
-        <y>100</y>
+        <x>10</x>
+        <y>80</y>
         <width>71</width>
         <height>21</height>
        </rect>
@@ -159,8 +212,8 @@
      <widget class="QSlider" name="hslStartSpeed">
       <property name="geometry">
        <rect>
-        <x>120</x>
-        <y>100</y>
+        <x>130</x>
+        <y>80</y>
         <width>661</width>
         <height>22</height>
        </rect>
@@ -172,8 +225,8 @@
      <widget class="QLabel" name="lblSpeedUpSlope">
       <property name="geometry">
        <rect>
-        <x>20</x>
-        <y>160</y>
+        <x>10</x>
+        <y>120</y>
         <width>91</width>
         <height>16</height>
        </rect>
@@ -186,7 +239,7 @@
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>210</y>
+        <y>160</y>
         <width>111</width>
         <height>16</height>
        </rect>
@@ -199,7 +252,7 @@
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>260</y>
+        <y>200</y>
         <width>111</width>
         <height>16</height>
        </rect>
@@ -211,8 +264,8 @@
      <widget class="QSlider" name="hslSpdUpSlope">
       <property name="geometry">
        <rect>
-        <x>120</x>
-        <y>160</y>
+        <x>130</x>
+        <y>120</y>
         <width>661</width>
         <height>22</height>
        </rect>
@@ -224,8 +277,8 @@
      <widget class="QSlider" name="hslSpdDownSlope">
       <property name="geometry">
        <rect>
-        <x>120</x>
-        <y>210</y>
+        <x>130</x>
+        <y>160</y>
         <width>661</width>
         <height>22</height>
        </rect>
@@ -237,8 +290,8 @@
      <widget class="QSlider" name="hslAccelAir">
       <property name="geometry">
        <rect>
-        <x>120</x>
-        <y>260</y>
+        <x>130</x>
+        <y>200</y>
         <width>661</width>
         <height>22</height>
        </rect>
@@ -262,8 +315,8 @@
      <widget class="QLabel" name="lblGlide">
       <property name="geometry">
        <rect>
-        <x>30</x>
-        <y>50</y>
+        <x>10</x>
+        <y>40</y>
         <width>61</width>
         <height>21</height>
        </rect>
@@ -275,9 +328,9 @@
      <widget class="QSlider" name="hslGlide">
       <property name="geometry">
        <rect>
-        <x>110</x>
-        <y>50</y>
-        <width>671</width>
+        <x>130</x>
+        <y>40</y>
+        <width>661</width>
         <height>22</height>
        </rect>
       </property>
@@ -300,8 +353,8 @@
      <widget class="QLabel" name="lblBaseTurn">
       <property name="geometry">
        <rect>
-        <x>30</x>
-        <y>50</y>
+        <x>10</x>
+        <y>40</y>
         <width>81</width>
         <height>16</height>
        </rect>
@@ -314,8 +367,8 @@
       <property name="geometry">
        <rect>
         <x>130</x>
-        <y>50</y>
-        <width>651</width>
+        <y>40</y>
+        <width>661</width>
         <height>22</height>
        </rect>
       </property>
@@ -326,8 +379,8 @@
      <widget class="QLabel" name="lblTurnAir">
       <property name="geometry">
        <rect>
-        <x>30</x>
-        <y>100</y>
+        <x>10</x>
+        <y>80</y>
         <width>71</width>
         <height>16</height>
        </rect>
@@ -340,8 +393,8 @@
       <property name="geometry">
        <rect>
         <x>130</x>
-        <y>100</y>
-        <width>651</width>
+        <y>80</y>
+        <width>661</width>
         <height>22</height>
        </rect>
       </property>
@@ -353,7 +406,7 @@
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>150</y>
+        <y>120</y>
         <width>101</width>
         <height>16</height>
        </rect>
@@ -366,7 +419,7 @@
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>200</y>
+        <y>160</y>
         <width>111</width>
         <height>16</height>
        </rect>
@@ -379,7 +432,7 @@
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>250</y>
+        <y>200</y>
         <width>111</width>
         <height>16</height>
        </rect>
@@ -392,8 +445,8 @@
       <property name="geometry">
        <rect>
         <x>130</x>
-        <y>150</y>
-        <width>651</width>
+        <y>120</y>
+        <width>661</width>
         <height>22</height>
        </rect>
       </property>
@@ -405,8 +458,8 @@
       <property name="geometry">
        <rect>
         <x>130</x>
-        <y>200</y>
-        <width>651</width>
+        <y>160</y>
+        <width>661</width>
         <height>22</height>
        </rect>
       </property>
@@ -418,8 +471,8 @@
       <property name="geometry">
        <rect>
         <x>130</x>
-        <y>250</y>
-        <width>651</width>
+        <y>200</y>
+        <width>661</width>
         <height>22</height>
        </rect>
       </property>
@@ -439,6 +492,32 @@
      <attribute name="toolTip">
       <string>How much damage a star can do to another star.</string>
      </attribute>
+     <widget class="QLabel" name="lblBaseOff">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>40</y>
+        <width>71</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Base Offense:</string>
+      </property>
+     </widget>
+     <widget class="QSlider" name="hslBaseOff">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>40</y>
+        <width>661</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="tbDefense">
      <attribute name="icon">
@@ -451,6 +530,32 @@
      <attribute name="toolTip">
       <string>How much damage a star can take from attacks.</string>
      </attribute>
+     <widget class="QLabel" name="lblBaseDef">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>40</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Base Defense:</string>
+      </property>
+     </widget>
+     <widget class="QSlider" name="hslBaseDef">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>40</y>
+        <width>661</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="tbCharge">
      <attribute name="icon">
@@ -463,8 +568,8 @@
      <widget class="QLabel" name="lblChargeSpd">
       <property name="geometry">
        <rect>
-        <x>50</x>
-        <y>50</y>
+        <x>10</x>
+        <y>40</y>
         <width>81</width>
         <height>16</height>
        </rect>
@@ -476,9 +581,9 @@
      <widget class="QSlider" name="hslChargeSpeed">
       <property name="geometry">
        <rect>
-        <x>150</x>
-        <y>50</y>
-        <width>621</width>
+        <x>130</x>
+        <y>40</y>
+        <width>661</width>
         <height>22</height>
        </rect>
       </property>
@@ -496,7 +601,7 @@
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>100</y>
+        <y>80</y>
         <width>131</width>
         <height>21</height>
        </rect>
@@ -508,9 +613,9 @@
      <widget class="QSlider" name="hslChargeSpeedTurning">
       <property name="geometry">
        <rect>
-        <x>150</x>
-        <y>100</y>
-        <width>621</width>
+        <x>130</x>
+        <y>80</y>
+        <width>661</width>
         <height>22</height>
        </rect>
       </property>
@@ -524,8 +629,8 @@
      <widget class="QLabel" name="lblChargeDep">
       <property name="geometry">
        <rect>
-        <x>40</x>
-        <y>150</y>
+        <x>10</x>
+        <y>120</y>
         <width>91</width>
         <height>16</height>
        </rect>
@@ -537,8 +642,8 @@
      <widget class="QLabel" name="lblChargeSpdAir">
       <property name="geometry">
        <rect>
-        <x>20</x>
-        <y>190</y>
+        <x>10</x>
+        <y>160</y>
         <width>111</width>
         <height>16</height>
        </rect>
@@ -550,9 +655,9 @@
      <widget class="QSlider" name="hslChargeDep">
       <property name="geometry">
        <rect>
-        <x>150</x>
-        <y>150</y>
-        <width>621</width>
+        <x>130</x>
+        <y>120</y>
+        <width>661</width>
         <height>22</height>
        </rect>
       </property>
@@ -563,9 +668,9 @@
      <widget class="QSlider" name="hslChargeSpdAir">
       <property name="geometry">
        <rect>
-        <x>150</x>
-        <y>190</y>
-        <width>621</width>
+        <x>130</x>
+        <y>160</y>
+        <width>661</width>
         <height>22</height>
        </rect>
       </property>
@@ -585,8 +690,8 @@
      <widget class="QLabel" name="lblBoostNone">
       <property name="geometry">
        <rect>
-        <x>40</x>
-        <y>50</y>
+        <x>10</x>
+        <y>40</y>
         <width>101</width>
         <height>16</height>
        </rect>
@@ -598,8 +703,8 @@
      <widget class="QLabel" name="lblBoostHalf">
       <property name="geometry">
        <rect>
-        <x>40</x>
-        <y>90</y>
+        <x>10</x>
+        <y>80</y>
         <width>101</width>
         <height>16</height>
        </rect>
@@ -611,8 +716,8 @@
      <widget class="QLabel" name="lblBoostFull">
       <property name="geometry">
        <rect>
-        <x>40</x>
-        <y>130</y>
+        <x>10</x>
+        <y>120</y>
         <width>101</width>
         <height>16</height>
        </rect>
@@ -624,9 +729,9 @@
      <widget class="QSlider" name="hslBoostNone">
       <property name="geometry">
        <rect>
-        <x>160</x>
-        <y>50</y>
-        <width>621</width>
+        <x>130</x>
+        <y>40</y>
+        <width>661</width>
         <height>22</height>
        </rect>
       </property>
@@ -637,9 +742,9 @@
      <widget class="QSlider" name="hslBoostHalf">
       <property name="geometry">
        <rect>
-        <x>160</x>
-        <y>90</y>
-        <width>621</width>
+        <x>130</x>
+        <y>80</y>
+        <width>661</width>
         <height>22</height>
        </rect>
       </property>
@@ -650,9 +755,35 @@
      <widget class="QSlider" name="hslBoostFull">
       <property name="geometry">
        <rect>
-        <x>160</x>
-        <y>130</y>
-        <width>621</width>
+        <x>130</x>
+        <y>120</y>
+        <width>661</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblBoostSlide">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>160</y>
+        <width>101</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Boost (Slide)</string>
+      </property>
+     </widget>
+     <widget class="QSlider" name="hslBoostSlide">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>160</y>
+        <width>661</width>
         <height>22</height>
        </rect>
       </property>
@@ -672,8 +803,8 @@
      <widget class="QLabel" name="lblBounce">
       <property name="geometry">
        <rect>
-        <x>50</x>
-        <y>60</y>
+        <x>10</x>
+        <y>40</y>
         <width>47</width>
         <height>13</height>
        </rect>
@@ -685,8 +816,8 @@
      <widget class="QLabel" name="lblGravity">
       <property name="geometry">
        <rect>
-        <x>50</x>
-        <y>110</y>
+        <x>10</x>
+        <y>80</y>
         <width>47</width>
         <height>13</height>
        </rect>
@@ -698,9 +829,9 @@
      <widget class="QSlider" name="hslBounce">
       <property name="geometry">
        <rect>
-        <x>100</x>
-        <y>60</y>
-        <width>681</width>
+        <x>130</x>
+        <y>40</y>
+        <width>661</width>
         <height>22</height>
        </rect>
       </property>
@@ -711,9 +842,9 @@
      <widget class="QSlider" name="hslGravity">
       <property name="geometry">
        <rect>
-        <x>100</x>
-        <y>110</y>
-        <width>681</width>
+        <x>130</x>
+        <y>80</y>
+        <width>661</width>
         <height>22</height>
        </rect>
       </property>
