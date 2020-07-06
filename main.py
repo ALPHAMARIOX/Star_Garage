@@ -9,6 +9,10 @@ class StarGarage(QtWidgets.QMainWindow):
 		
 		super(StarGarage,self).__init__()
 		uic.loadUi('star_garage.ui',self)
+		self.intiUI()
+		
+	def initUI(self):
+		
 		
 	def run(self):
 		self.mainwindow.mainloop()

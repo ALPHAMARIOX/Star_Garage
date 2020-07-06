@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>803</width>
-    <height>600</height>
+    <width>902</width>
+    <height>604</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -23,15 +23,15 @@
      <rect>
       <x>-4</x>
       <y>-1</y>
-      <width>811</width>
+      <width>911</width>
       <height>581</height>
      </rect>
     </property>
     <property name="toolTip">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Adjust the star's weight.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Adjust your stars stats in each of these tabs.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>8</number>
     </property>
     <widget class="QWidget" name="tbWeight">
      <attribute name="icon">
@@ -108,6 +108,26 @@
        <number>1</number>
       </property>
      </widget>
+     <widget class="QTextEdit" name="txtWeight">
+      <property name="geometry">
+       <rect>
+        <x>800</x>
+        <y>35</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="txtKnockback">
+      <property name="geometry">
+       <rect>
+        <x>800</x>
+        <y>75</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="tbHP">
      <attribute name="icon">
@@ -146,7 +166,7 @@
        <number>1</number>
       </property>
       <property name="maximum">
-       <number>2000</number>
+       <number>1000</number>
       </property>
       <property name="orientation">
        <enum>Qt::Horizontal</enum>
@@ -156,6 +176,16 @@
       </property>
       <property name="tickInterval">
        <number>100</number>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="txtHP">
+      <property name="geometry">
+       <rect>
+        <x>800</x>
+        <y>35</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
       </property>
      </widget>
     </widget>
@@ -300,6 +330,56 @@
        <enum>Qt::Horizontal</enum>
       </property>
      </widget>
+     <widget class="QTextEdit" name="txtGroundSpeed">
+      <property name="geometry">
+       <rect>
+        <x>800</x>
+        <y>35</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="txtAccelAir">
+      <property name="geometry">
+       <rect>
+        <x>800</x>
+        <y>195</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="txtSpeedDownSlope">
+      <property name="geometry">
+       <rect>
+        <x>800</x>
+        <y>155</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="txtSpeedUpSlope">
+      <property name="geometry">
+       <rect>
+        <x>800</x>
+        <y>115</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="txtStarSpeed">
+      <property name="geometry">
+       <rect>
+        <x>800</x>
+        <y>75</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="tbGlide">
      <attribute name="icon">
@@ -336,6 +416,16 @@
       </property>
       <property name="orientation">
        <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="txtGlide">
+      <property name="geometry">
+       <rect>
+        <x>800</x>
+        <y>35</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
       </property>
      </widget>
     </widget>
@@ -480,6 +570,56 @@
        <enum>Qt::Horizontal</enum>
       </property>
      </widget>
+     <widget class="QTextEdit" name="txtTurn">
+      <property name="geometry">
+       <rect>
+        <x>800</x>
+        <y>35</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="txtTurnAir">
+      <property name="geometry">
+       <rect>
+        <x>800</x>
+        <y>75</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="txtTurnRails">
+      <property name="geometry">
+       <rect>
+        <x>800</x>
+        <y>115</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="txtTurnHighSpd">
+      <property name="geometry">
+       <rect>
+        <x>800</x>
+        <y>155</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="txtTurnLowSpd">
+      <property name="geometry">
+       <rect>
+        <x>800</x>
+        <y>195</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="tbOffense">
      <attribute name="icon">
@@ -516,6 +656,16 @@
       </property>
       <property name="orientation">
        <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="txtBaseOff">
+      <property name="geometry">
+       <rect>
+        <x>801</x>
+        <y>35</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
       </property>
      </widget>
     </widget>
@@ -556,6 +706,16 @@
        <enum>Qt::Horizontal</enum>
       </property>
      </widget>
+     <widget class="QTextEdit" name="txtBaseDef">
+      <property name="geometry">
+       <rect>
+        <x>800</x>
+        <y>35</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="tbCharge">
      <attribute name="icon">
@@ -578,7 +738,7 @@
        <string>Charge Speed:</string>
       </property>
      </widget>
-     <widget class="QSlider" name="hslChargeSpeed">
+     <widget class="QSlider" name="hslChargeSpd">
       <property name="geometry">
        <rect>
         <x>130</x>
@@ -676,6 +836,46 @@
       </property>
       <property name="orientation">
        <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="txtChargeSpd">
+      <property name="geometry">
+       <rect>
+        <x>800</x>
+        <y>35</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="txtChargeSpdAir">
+      <property name="geometry">
+       <rect>
+        <x>800</x>
+        <y>155</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="txtChargeDep">
+      <property name="geometry">
+       <rect>
+        <x>800</x>
+        <y>115</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="txtChargeSpeedTurning">
+      <property name="geometry">
+       <rect>
+        <x>800</x>
+        <y>75</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
       </property>
      </widget>
     </widget>
@@ -791,6 +991,46 @@
        <enum>Qt::Horizontal</enum>
       </property>
      </widget>
+     <widget class="QTextEdit" name="txtBoostNone">
+      <property name="geometry">
+       <rect>
+        <x>800</x>
+        <y>35</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="txtBoostHalf">
+      <property name="geometry">
+       <rect>
+        <x>800</x>
+        <y>75</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="txtBoostFull">
+      <property name="geometry">
+       <rect>
+        <x>800</x>
+        <y>115</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="txtBoostSlide">
+      <property name="geometry">
+       <rect>
+        <x>800</x>
+        <y>155</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="tbMisc">
      <attribute name="icon">
@@ -852,6 +1092,26 @@
        <enum>Qt::Horizontal</enum>
       </property>
      </widget>
+     <widget class="QTextEdit" name="txtBounce">
+      <property name="geometry">
+       <rect>
+        <x>800</x>
+        <y>35</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="txtGravity">
+      <property name="geometry">
+       <rect>
+        <x>800</x>
+        <y>75</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
     </widget>
    </widget>
   </widget>
@@ -860,7 +1120,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>803</width>
+     <width>902</width>
      <height>21</height>
     </rect>
    </property>
@@ -882,15 +1142,24 @@
    <property name="text">
     <string>Open</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
   </action>
   <action name="actSave">
    <property name="text">
     <string>Save</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
   </action>
   <action name="actSaveAs">
    <property name="text">
     <string>Save As</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+S</string>
    </property>
   </action>
   <action name="actClose">
