@@ -9,10 +9,8 @@ class StarGarage(QtWidgets.QMainWindow):
 		
 		super(StarGarage,self).__init__()
 		uic.loadUi('star_garage.ui',self)
-		self.intiUI()
 		
-	def initUI(self):
-		
+		self.menuaction = self.findChild(QtWidgets.QAction, 'actOpen')
 		
 	def run(self):
 		self.mainwindow.mainloop()
